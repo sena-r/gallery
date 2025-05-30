@@ -18,9 +18,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 					y: 50,
 				},
 				breakAt: {
-					940: 3,
-					520: 2,
-					480: 1
+					1200: 4,
+  					992: 3,
+  					768: 2,
+  					480: 1
 				}
 			});
 		});
