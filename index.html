@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index.css">
+	<title></title>
+</head>
+<body>
+
+	<!--title-->
+	<div id="title"></div>
+
+	<!--gallery-->
+	<div id="gallery">
+		<div id="gallery-container">
+		</div>
+	</div>
+
+	<!--modal-->
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<button class="modal__close" aria-label="Close modal" data-micromodal-close>&times;</button>
+				<main class="modal__content" id="modal-1-content">
+					<a id="modal-link" href="#" target="_blank">
+						<img id="modal-image" src="" alt="">
+					</a>
+					<p id="modal-caption"></p>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<!--scripts-->
+	<script src="js/setting.js"></script>
+	<script src="js/utils/01_manageElement.js"></script>
+	<script src="js/utils/02_manageClass.js"></script>
+	<script src="js/utils/03_manageVisiblity.js"></script>
+	<script src="js/utils/04_manageAnimation.js"></script>
+	<script src="js/utils/05_manageScroll.js"></script>
+	<script src="js/utils/06_manageEvent.js"></script>
+	<script src="js/components/01_collectDataFromURL.js"></script>
+	<script src="js/components/02_manageGalleryDOM.js"></script>
+	<script src="js/components/03_manageTitleDOM.js"></script>
+	<script src="js/lib/macy.min.js"></script>
+	<script src="js/lib/imagesloaded.pkgd.min.js"></script>
+	<script src="js/lib/micromodal.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
