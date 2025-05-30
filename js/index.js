@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 				breakAt: {
 					940: 3,
 					520: 2,
-					460: 1
+					480: 1
 				}
 			});
 		});
