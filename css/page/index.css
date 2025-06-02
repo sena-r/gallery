@@ -116,6 +116,7 @@ html,body{
 						height: auto;
 						margin: 0 auto;
 						object-fit: contain;
+						border-radius:0 !important;
 					}
 				}
 				#modal-caption {
