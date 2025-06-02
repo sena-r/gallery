@@ -59,7 +59,7 @@ async function getData(url,sData=[],gData=[]){
 const firstURL ="https://kotobarokou.hatenablog.com";
 
 
-const siteTitle ="kotoba wa rkou suru."
+const siteTitle ="Scrap und Build."
 const userName ="sena"
 function setSiteTitle(){
     if(siteTitle=="" && userName==""){
