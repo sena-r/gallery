@@ -116,7 +116,7 @@ html,body{
 			}
 			#modal-pager{
 				position: absolute;
-				bottom: 10px;
+				bottom: 30px;
 				left: 10px;
 				right: 10px;
 				display: flex;
