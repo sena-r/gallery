@@ -23,7 +23,7 @@ const userName ="sena"
 
 //１：記事のタイトルを表示するかどうか
 //入力値：0=しない 1=する
-const showArticleTitle = 1
+const showArticleTitle = 0
 
 //２：画像をクリックしたら記事に移動するかどうか
 //入力値：0=しない 1=する
