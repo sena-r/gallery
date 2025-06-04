@@ -223,11 +223,11 @@ function showModalImage(index) {
         modalImage.classList.add("fade-in");
         if (showArticleTitle == 1) {
             modalCaption.textContent = dt.title;
+	    setTimeout(() => {
+                modalCaption.style.transition = "opacity 0.5s ease-in-out";
+                modalCaption.style.opacity = "1";
+            }, 300); // 画像
         }
-        setTimeout(() => {
-            modalCaption.style.transition = "opacity 0.5s ease-in-out";
-            modalCaption.style.opacity = "1";
-        }, 300); // 画像のフェードインに重ねたければ300ms程度
     }, 300);// delay to animate
     //set article link to image
     if (jumpArticleToClickImage == 1) {
