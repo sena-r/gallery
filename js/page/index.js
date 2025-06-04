@@ -209,27 +209,37 @@ function showModalImage(index) {
     const modalImage = document.getElementById("modal-image");
     const modalCaption = document.getElementById("modal-caption");
     const modalLink = document.getElementById("modal-link");
+
     modalImage.classList.remove("fade-in");
     modalImage.src = "";
-    void modalImage.offsetWidth;
-    // キャプションを非表示にし、内容クリア
-    modalCaption.style.opacity = "0";
-    modalCaption.style.transition = "none"; // 直後の変更にトランジションを効かせない
-    modalCaption.textContent = "";
     void modalImage.offsetWidth; // 強制再描画
-    //set new image
+
+    // キャプションはまずクリアし、opacityは0にしておく
+    modalCaption.textContent = dt.title;
+    modalCaption.style.transition = "none";
+    modalCaption.style.opacity = "0";
+    void modalCaption.offsetWidth; // 強制再描画
+
+    // 遅延して画像をセット＆フェードイン開始
     setTimeout(() => {
         modalImage.src = dt.imgSrc;
         modalImage.classList.add("fade-in");
+
         if (showArticleTitle == 1) {
+            // キャプションは即セットし、opacityは0のまま
             modalCaption.textContent = dt.title;
-	    setTimeout(() => {
+
+            // 少し遅らせてopacityを1にしてフェードイン
+            setTimeout(() => {
+                modalCaption.textContent = dt.title;
                 modalCaption.style.transition = "opacity 0.5s ease-in-out";
                 modalCaption.style.opacity = "1";
-            }, 300); // 画像
+                void modalCaption.offsetWidth; // 強制再描画
+            }, 100); // 300msは長いので少し短縮
         }
-    }, 300);// delay to animate
-    //set article link to image
+    }, 300);
+
+    // リンク設定
     if (jumpArticleToClickImage == 1) {
         modalLink.href = dt.url;
         modalLink.style.pointerEvents = "auto";
@@ -240,6 +250,7 @@ function showModalImage(index) {
         modalLink.style.cursor = "default";
     }
 }
+
 
 
 
