@@ -3,7 +3,7 @@ LICENSE
 =========================
 
 
-Copyright (c) 2025 sena
+Copyright (c) 2025 sena-r
 
 This software and associated documentation files (the "Software") are licensed
 for use, reproduction, modification, and distribution for non-commercial purposes only.
