@@ -142,6 +142,9 @@ function setModal(gData) {
             event.preventDefault();
             const cached = cachedGDataMap.get(img.src);
             if (cached) {
+                document.querySelector('.modal__container').addEventListener('click', function (event) {
+                    event.stopPropagation();
+                });
                 const modalImage = document.getElementById("modal-image");
                 const modalCaption = document.getElementById("modal-caption");
                 const modalLink = document.getElementById("modal-link");
