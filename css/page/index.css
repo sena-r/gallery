@@ -154,7 +154,7 @@ html,body{
 					height: auto;
 					text-align: center;
 					#modal-image {
-						max-width: 90vw;
+						max-width: 95%;
 						max-height: 50vh;
 						opacity: 0;
 						transition: opacity 0.5s ease-in-out;
